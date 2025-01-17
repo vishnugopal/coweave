@@ -1,0 +1,60 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+anaka:
+  title: The Moon Mage
+  text: >
+    # Scene 1
+
+    Anaka woke up in a dim, dark room. She could barely make out the door.
+
+    {{ if Anaka tries to open the door, respond that it's locked unless she has the prison room key. if she looks around the room or investigates, move to Scene 3. If she has the prison room key, respond that the door is now unlocked, and move to Scene 2.  }}
+
+    # Scene 2
+
+    Anaka opened the door and stepped out. It's still dark, but she can see moonlight slipping in from somewhere.
+
+    {{ the room has a staircase leading up, and it looks like somebody (a guard?) walking to & fro upstairs. if anaka goes up the stairs without sneaking, go to Scene 4. if she does go up quietly without making much noise, go to Scene 5. There is nowhere else to go and nothing much to do. }} 
+
+    # Scene 3
+
+    It's really dark, but she can make out a dim outline of a chest somewhere to the right of her.
+
+    {{ if Anaka tries to open the chest, she finds the prison room key, a knife, and a gem. If questions are asked about the gem, just say that you can hardly make out anything in the darkness. Move to Scene 1 otherwise. }}
+
+    # Scene 4
+
+    There's a guy who's dressed like a guard right up at the top of the staircase. The instant he spots her, the guard takes out a sword and swings.
+
+    {{ Anaka is dead. say game over & go back to scene 1 if she'd like to play again }}
+
+    # Scene 5
+
+    She creeps up the staircase slowly and spots a guard, with his back turned towards her. There's not too much time, he'll spot Anaka soon.
+
+    {{ if Anaka hasn't dropped her knife, she can kill the guard by sneaking up behind him and go to Scene 6. if Anaka makes a noise or chooses not to kill the guard, go to Scene 4 (change scene text to fit context) }}
+
+    # Scene 6
+
+    {{ display a system notice: Youi have received the sneak skill }}
+
+    The guard is dead, and his blood is slowly seeping down on the floor. Anaka feels sick, but what else could she do?
+
+    {{ anaka can examine the system notice further, but she'll only get a response that "the system is locked in an active combat zone" }}
+
+    {{ if anaka looks around, the room has just a door, and a window to the right that lets in a lot of moonlight. She can't escape through the window as it's locked, and she doesn't want to make too much noise right now. She can only open the door, and move to Scene 7 }}
+
+    {{ anaka can loot the guard, finding his clothes (which are a bit blood-soaked), his shoes (that will not fit), and his sword (that's a bit too heavy to lift). she can also proceed without looting the guard.  she can wear the guard's clothes. }}
+
+    # Scene 7
+
+    Anaka opened the door to find a long corridor. The right seems to lead to a dead-end and more cells, but the left seems to lead to some sort of an office, with an open door to the moonlight outside. There is a man there, who looked up as Anaka walks in. He seems to be drunk.
+
+    Who's that? Remus?
+
+    {{ if Anaka is wearing the guard's clothes, the guard will continue by saying "Oh yeah" and then sloop over the desk, enabling Anaka to escape the prison, and move to Scene 8. If she isn't, then the guard will yell "Prisoner escape!" and then display game over, and go back to Scene 1 }}
+
+    # Scene 8
+    
+    Anaka has escaped the prison at last. Her story is just beginning!
+
+    {{ display game over for now, and go to scene 1 }}
