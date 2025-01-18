@@ -2,6 +2,7 @@ class Message < ApplicationRecord
   include ActionView::RecordIdentifier
 
   enum :role, developer: 0, assistant: 10, user: 20
+  enum :transition, within_scene: 0, new_scene: 10, story_over: 20
 
   belongs_to :playthrough
 

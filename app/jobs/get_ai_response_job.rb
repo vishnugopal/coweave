@@ -15,6 +15,7 @@ class GetAiResponseJob < ApplicationJob
     client.chat(
       parameters: {
         model: "gpt-4o",
+        response_format: { type: "json_object" },
         messages: Message.for_openai(playthrough.messages),
         temperature: 0.8,
         stream: stream_proc(playthrough: playthrough),
@@ -38,7 +39,53 @@ class GetAiResponseJob < ApplicationJob
     proc do |chunk, _bytesize|
       new_content = chunk.dig("choices", 0, "delta", "content")
       message = messages.find { |m| m.response_number == chunk.dig("choices", 0, "index") }
-      message.update(content: message.content + new_content) if new_content
+
+      json_fragment = "#{message.json_content}#{new_content}"
+
+      scene_content = parse_json_fragment(
+        fragment: json_fragment,
+        field: "message",
+        current_value: message.content,
+        fallback: ""
+      )
+
+      scene_number = parse_json_fragment(
+        fragment: json_fragment,
+        field: "scene_number",
+        current_value: message.scene_number,
+        fallback: 0
+      )
+
+      transition = parse_json_fragment(
+        fragment: json_fragment,
+        field: "transition",
+        current_value: message.transition,
+        fallback: "within_scene",
+        allowed_values: Message.transitions.keys
+      )
+
+      if new_content
+        message.update(
+          content: scene_content,
+          transition: transition,
+          scene_number: scene_number,
+          json_content: message.json_content + new_content
+        )
+      end
     end
+  end
+
+  def parse_json_fragment(fragment:, field:, current_value:, fallback: "", allowed_values: false)
+    value = json_parser.parse(fragment)[field] || fallback
+
+    raise TypeError if allowed_values && !allowed_values.include?(value)
+    value
+  rescue Optimistic::Json::Parser::MissingParser, NoMethodError, TypeError
+    current_value || fallback
+  end
+
+  # An optimistic JSON parser that can parse fragments.
+  def json_parser
+    Optimistic::Json::Parser.new
   end
 end

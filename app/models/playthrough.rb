@@ -7,14 +7,24 @@ class Playthrough < ApplicationRecord
     You can change the scene description if it makes sense for the context, but make sure the intent is the same.
     If the user finds creative (but plausible) ways to solve problems, go ahead with their narrative and tweak scene descriptions as needed.
 
-    After the scene, don't add any extra prompts. Don't say things like "Sure let's begin" or "Scene 1", respond only with the scene description. Never go out of character and say things like “Move to Scene X” when you respond.
+    After the scene, don't add any extra prompts. Don't say things like "Sure let's begin" or "Scene 1", respond only with the scene description.
+    Never go out of character and say things like “Move to Scene X” when you respond.
     REMEMBER: Do not ever display the text between {{ and }} in the scene to the user.
 
     Scenes:
 
     {{scenes}}
 
-    Respond with the first scene to start.
+    Respond in JSON with a shape like this:
+    {
+      "message": "<Your generated scene text>",
+      "transition": "One of within_scene, new_scene, or story_over",
+      "scene_number": "<The scene number we are currently on>"
+    }
+
+    Use within_scene when you are generating text within a Scene.
+    Use new_scene when you are generating a new Scene.
+    Use story_over when the scene says story or game over.
   PROMPT
 
   belongs_to :story
