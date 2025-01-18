@@ -7,7 +7,7 @@ namespace :db do
       models.each do |model|
         model_name = model.name.pluralize.underscore
         File.open("#{Rails.root}/test/fixtures/#{model_name}.yml", "w") do |file|
-          file.write model.all.to_a.map(&:attributes).to_yaml
+          file.write model.all.map(&:attributes).map { |el|  { el["id"] => el.except("created_at", "updated_at") } }.reduce { |a, b| a.merge(b) }.to_yaml
         end
       end
     end

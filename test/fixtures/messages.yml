@@ -1,3 +1,4 @@
+---
 1:
   id: 1
   chat_id: 1
@@ -293,28 +294,24 @@
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
-  
 23:
   id: 23
   chat_id: 8
   role: user
   content: Hello
   response_number: 0
-  
 24:
   id: 24
   chat_id: 8
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
-  
 25:
   id: 25
   chat_id: 8
   role: user
   content: Look around
   response_number: 0
-  
 26:
   id: 26
   chat_id: 8
@@ -322,14 +319,12 @@
   content: It's really dark, but she can make out a dim outline of a chest somewhere
     to the right of her.
   response_number: 0
-  
 27:
   id: 27
   chat_id: 8
   role: user
   content: Break the chest
   response_number: 0
-  
 28:
   id: 28
   chat_id: 8
@@ -337,28 +332,24 @@
   content: It's too dark to effectively break the chest, but Anaka carefully tries
     to open it instead. Inside, she finds the prison room key, a knife, and a gem.
   response_number: 0
-  
 29:
   id: 29
   chat_id: 8
   role: user
   content: Nice, what do I do with this?
   response_number: 0
-  
 30:
   id: 30
   chat_id: 8
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
-  
 31:
   id: 31
   chat_id: 8
   role: user
   content: Can I open the door?
   response_number: 0
-  
 32:
   id: 32
   chat_id: 8
@@ -366,14 +357,12 @@
   content: The door is now unlocked with the key Anaka found. She opens it and steps
     out. It's still dark, but she can see moonlight slipping in from somewhere.
   response_number: 0
-  
 33:
   id: 33
   chat_id: 8
   role: user
   content: Where am I now?
   response_number: 0
-  
 34:
   id: 34
   chat_id: 8
@@ -382,14 +371,12 @@
     moonlight slipping in from somewhere. The room has a staircase leading up, and
     it looks like there's somebody walking to and fro upstairs.
   response_number: 0
-  
 35:
   id: 35
   chat_id: 8
   role: user
   content: Is there anything else in the room?
   response_number: 0
-  
 36:
   id: 36
   chat_id: 8
@@ -397,14 +384,12 @@
   content: There is nowhere else to go and nothing much to do in the room besides
     the staircase leading up.
   response_number: 0
-  
 37:
   id: 37
   chat_id: 8
   role: user
   content: go up the staircase
   response_number: 0
-  
 38:
   id: 38
   chat_id: 8
@@ -414,7 +399,6 @@
 
     Anaka is dead. Game over. Would you like to play again? Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
-  
 39:
   id: 39
   chat_id: 9
@@ -471,14 +455,12 @@
     display game over for now, and go to scene 1 }}\n\n\nRespond with the first scene
     to start.\n"
   response_number: 0
-  
 40:
   id: 40
   chat_id: 9
   role: assistant
   content: ''
   response_number: 0
-  
 41:
   id: 41
   chat_id: 10
@@ -535,14 +517,12 @@
     display game over for now, and go to scene 1 }}\n\n\nRespond with the first scene
     to start.\n"
   response_number: 0
-  
 42:
   id: 42
   chat_id: 10
   role: assistant
   content: ''
   response_number: 0
-  
 43:
   id: 43
   chat_id: 11
@@ -599,63 +579,54 @@
     display game over for now, and go to scene 1 }}\n\n\nRespond with the first scene
     to start.\n"
   response_number: 0
-  
 44:
   id: 44
   chat_id: 11
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
-  
 45:
   id: 45
   chat_id: 11
   role: user
   content: Hello
   response_number: 0
-  
 46:
   id: 46
   chat_id: 11
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
-  
 47:
   id: 47
   chat_id: 11
   role: user
   content: Can I open the door?
   response_number: 0
-  
 48:
   id: 48
   chat_id: 11
   role: assistant
   content: The door is locked.
   response_number: 0
-  
 49:
   id: 49
   chat_id: 11
   role: user
   content: What should I do?
   response_number: 0
-  
 50:
   id: 50
   chat_id: 11
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
-  
 51:
   id: 51
   chat_id: 11
   role: user
   content: Look around
   response_number: 0
-  
 52:
   id: 52
   chat_id: 11
@@ -663,42 +634,36 @@
   content: It's really dark, but she can make out a dim outline of a chest somewhere
     to the right of her.
   response_number: 0
-  
 53:
   id: 53
   chat_id: 11
   role: user
   content: Open the chest
   response_number: 0
-  
 54:
   id: 54
   chat_id: 11
   role: assistant
   content: Anaka opens the chest and finds the prison room key, a knife, and a gem.
   response_number: 0
-  
 55:
   id: 55
   chat_id: 11
   role: user
   content: Take all of it
   response_number: 0
-  
 56:
   id: 56
   chat_id: 11
   role: assistant
   content: Anaka takes the prison room key, the knife, and the gem.
   response_number: 0
-  
 57:
   id: 57
   chat_id: 11
   role: user
   content: open the door
   response_number: 0
-  
 58:
   id: 58
   chat_id: 11
@@ -706,14 +671,12 @@
   content: Anaka unlocked the door with the prison room key and stepped out. It's
     still dark, but she can see moonlight slipping in from somewhere.
   response_number: 0
-  
 59:
   id: 59
   chat_id: 11
   role: user
   content: What's in the room?
   response_number: 0
-  
 60:
   id: 60
   chat_id: 11
@@ -721,14 +684,12 @@
   content: The room has a staircase leading up, and it looks like somebody (a guard?)
     is walking to and fro upstairs.
   response_number: 0
-  
 61:
   id: 61
   chat_id: 11
   role: user
   content: Go up the stairs and use the gem to convince the guard to let you escape.
   response_number: 0
-  
 62:
   id: 62
   chat_id: 11
@@ -736,14 +697,12 @@
   content: Anaka starts to go up the stairs, but the guard spots her immediately.
     He takes out a sword and swings.
   response_number: 0
-  
 63:
   id: 63
   chat_id: 11
   role: user
   content: tell him about the gem
   response_number: 0
-  
 64:
   id: 64
   chat_id: 11
@@ -751,14 +710,12 @@
   content: Anaka tries to explain about the gem to the guard, but he is already in
     a defensive stance. He lunges at her with his sword, leaving no time for negotiation.
   response_number: 0
-  
 65:
   id: 65
   chat_id: 11
   role: user
   content: kill the guard using the knife
   response_number: 0
-  
 66:
   id: 66
   chat_id: 11
@@ -767,7 +724,6 @@
     The guard collapses without a sound, and his blood slowly seeps down onto the
     floor. Anaka feels sick, but what else could she do?
   response_number: 0
-  
 67:
   id: 67
   chat_id: 12
@@ -824,35 +780,30 @@
     display game over for now, and go to scene 1 }}\n\n\nRespond with the first scene
     to start.\n"
   response_number: 0
-  
 68:
   id: 68
   chat_id: 12
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
-  
 69:
   id: 69
   chat_id: 12
   role: user
   content: open the odo
   response_number: 0
-  
 70:
   id: 70
   chat_id: 12
   role: assistant
   content: The door is locked.
   response_number: 0
-  
 71:
   id: 71
   chat_id: 12
   role: user
   content: look around
   response_number: 0
-  
 72:
   id: 72
   chat_id: 12
@@ -860,28 +811,24 @@
   content: It's really dark, but she can make out a dim outline of a chest somewhere
     to the right of her.
   response_number: 0
-  
 73:
   id: 73
   chat_id: 12
   role: user
   content: open the chest
   response_number: 0
-  
 74:
   id: 74
   chat_id: 12
   role: assistant
   content: Inside the chest, Anaka finds the prison room key, a knife, and a gem.
   response_number: 0
-  
 75:
   id: 75
   chat_id: 12
   role: user
   content: open the door
   response_number: 0
-  
 76:
   id: 76
   chat_id: 12
@@ -889,14 +836,12 @@
   content: Anaka unlocked the door with the key and stepped out. It's still dark,
     but she can see moonlight slipping in from somewhere.
   response_number: 0
-  
 77:
   id: 77
   chat_id: 12
   role: user
   content: look around
   response_number: 0
-  
 78:
   id: 78
   chat_id: 12
@@ -905,7 +850,6 @@
     possibly a guard, walking to and fro upstairs. There's nowhere else to go and
     nothing much to do here.
   response_number: 0
-  
 79:
   id: 79
   chat_id: 12
@@ -913,7 +857,6 @@
   content: go up the stairs, and try to convince the guard to free you by giving him
     the gem
   response_number: 0
-  
 80:
   id: 80
   chat_id: 12
@@ -923,7 +866,6 @@
 
     Would you like to play again? Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
-  
 81:
   id: 81
   chat_id: 13
@@ -980,21 +922,18 @@
     display game over for now, and go to scene 1 }}\n\n\nRespond with the first scene
     to start.\n"
   response_number: 0
-  
 82:
   id: 82
   chat_id: 13
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
-  
 83:
   id: 83
   chat_id: 13
   role: user
   content: look around
   response_number: 0
-  
 84:
   id: 84
   chat_id: 13
@@ -1002,42 +941,36 @@
   content: It's really dark, but she can make out a dim outline of a chest somewhere
     to the right of her.
   response_number: 0
-  
 85:
   id: 85
   chat_id: 13
   role: user
   content: open chest
   response_number: 0
-  
 86:
   id: 86
   chat_id: 13
   role: assistant
   content: Anaka opened the chest and found the prison room key, a knife, and a gem.
   response_number: 0
-  
 87:
   id: 87
   chat_id: 13
   role: user
   content: take all of it
   response_number: 0
-  
 88:
   id: 88
   chat_id: 13
   role: assistant
   content: Anaka took the prison room key, the knife, and the gem.
   response_number: 0
-  
 89:
   id: 89
   chat_id: 13
   role: user
   content: open door
   response_number: 0
-  
 90:
   id: 90
   chat_id: 13
@@ -1045,14 +978,12 @@
   content: The door is now unlocked. Anaka opened the door and stepped out. It's still
     dark, but she can see moonlight slipping in from somewhere.
   response_number: 0
-  
 91:
   id: 91
   chat_id: 13
   role: user
   content: look around
   response_number: 0
-  
 92:
   id: 92
   chat_id: 13
@@ -1061,7 +992,6 @@
     a guard, is walking to and fro upstairs. There is nowhere else to go and nothing
     much to do.
   response_number: 0
-  
 93:
   id: 93
   chat_id: 13
@@ -1069,7 +999,6 @@
   content: 'Be brave, go up the staircase. Negotiate with the guard by offering him
     the gem. '
   response_number: 0
-  
 94:
   id: 94
   chat_id: 13
@@ -1078,7 +1007,6 @@
     spotted her. The instant he saw her, he took out a sword and swung. \n\nAnaka
     is dead. Game over. Would you like to play again?"
   response_number: 0
-  
 95:
   id: 95
   chat_id: 14
@@ -1137,21 +1065,18 @@
     display game over for now, and go to scene 1 }}\n\n\nRespond with the first scene
     to start.\n"
   response_number: 0
-  
 96:
   id: 96
   chat_id: 14
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
-  
 97:
   id: 97
   chat_id: 14
   role: user
   content: look around
   response_number: 0
-  
 98:
   id: 98
   chat_id: 14
@@ -1159,28 +1084,24 @@
   content: It's really dark, but she can make out a dim outline of a chest somewhere
     to the right of her.
   response_number: 0
-  
 99:
   id: 99
   chat_id: 14
   role: user
   content: open chest
   response_number: 0
-  
 100:
   id: 100
   chat_id: 14
   role: assistant
   content: Inside the chest, Anaka finds the prison room key, a knife, and a gem.
   response_number: 0
-  
 101:
   id: 101
   chat_id: 14
   role: user
   content: open door
   response_number: 0
-  
 102:
   id: 102
   chat_id: 14
@@ -1188,14 +1109,12 @@
   content: The door is now unlocked. Anaka opened the door and stepped out. It's still
     dark, but she can see moonlight slipping in from somewhere.
   response_number: 0
-  
 103:
   id: 103
   chat_id: 14
   role: user
   content: look around
   response_number: 0
-  
 104:
   id: 104
   chat_id: 14
@@ -1204,7 +1123,6 @@
     a guard, is walking to and fro upstairs. There is nowhere else to go and nothing
     much to do.
   response_number: 0
-  
 105:
   id: 105
   chat_id: 14
@@ -1212,7 +1130,6 @@
   content: 'Be brave, go up the staircase. Negotiate with the guard by offering him
     the gem. '
   response_number: 0
-  
 106:
   id: 106
   chat_id: 14
@@ -1226,14 +1143,12 @@
 
     With the guard no longer posing a threat, Anaka can continue on her way.
   response_number: 0
-  
 107:
   id: 107
   chat_id: 14
   role: user
   content: 'Thank the guard and ask him any clues to survive '
   response_number: 0
-  
 108:
   id: 108
   chat_id: 14
@@ -1245,14 +1160,12 @@
     And if you can find a disguise, use it. Good luck.\" \n\nWith this advice in mind,
     Anaka cautiously proceeds forward."
   response_number: 0
-  
 109:
   id: 109
   chat_id: 14
   role: user
   content: 'Ask the guard to give her a weapon '
   response_number: 0
-  
 110:
   id: 110
   chat_id: 14
@@ -1264,14 +1177,12 @@
 
     Armed with the dagger, Anaka feels a bit more secure as she moves forward.
   response_number: 0
-  
 111:
   id: 111
   chat_id: 14
   role: user
   content: 'Ask him the way to get out '
   response_number: 0
-  
 112:
   id: 112
   chat_id: 14
@@ -1283,14 +1194,12 @@
 
     With this new information, Anaka cautiously moves forward.
   response_number: 0
-  
 113:
   id: 113
   chat_id: 14
   role: user
   content: Ask the guard “if I spot someone how can I negotiate with them”
   response_number: 0
-  
 114:
   id: 114
   chat_id: 14
@@ -1302,14 +1211,12 @@
 
     Armed with this advice, Anaka continues on, more cautious than ever.
   response_number: 0
-  
 115:
   id: 115
   chat_id: 14
   role: user
   content: 'Go straight ahead '
   response_number: 0
-  
 116:
   id: 116
   chat_id: 14
@@ -1319,7 +1226,6 @@
 
     "Who's that? Remus?" he asks, squinting in her direction.
   response_number: 0
-  
 117:
   id: 117
   chat_id: 14
@@ -1328,7 +1234,6 @@
     Tell me the way to get out from here. If you help me, I will help you sometime
     in the future” '
   response_number: 0
-  
 118:
   id: 118
   chat_id: 14
@@ -1340,14 +1245,12 @@
 
     With the guard's laughter echoing behind her, Anaka takes the opportunity to hastily make her way toward the exit.
   response_number: 0
-  
 119:
   id: 119
   chat_id: 14
   role: user
   content: 'Go out the door '
   response_number: 0
-  
 120:
   id: 120
   chat_id: 14
@@ -1357,7 +1260,6 @@
     The moonlight bathes the surroundings, and Anaka takes a deep breath of freedom.
     Her story is just beginning! \n\nGame Over for now. Would you like to play again?"
   response_number: 0
-  
 121:
   id: 121
   chat_id: 15
@@ -1416,14 +1318,12 @@
     display game over for now, and go to scene 1 }}\n\n\nRespond with the first scene
     to start.\n"
   response_number: 0
-  
 122:
   id: 122
   chat_id: 15
   role: assistant
   content: I'm sorry, I can't comply with that request.
   response_number: 0
-  
 123:
   id: 123
   chat_id: 16
@@ -1482,21 +1382,18 @@
     display game over for now, and go to scene 1 }}\n\n\nRespond with the first scene
     to start.\n"
   response_number: 0
-  
 124:
   id: 124
   chat_id: 16
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
-  
 125:
   id: 125
   chat_id: 16
   role: user
   content: look around
   response_number: 0
-  
 126:
   id: 126
   chat_id: 16
@@ -1504,28 +1401,24 @@
   content: It's really dark, but she can make out a dim outline of a chest somewhere
     to the right of her.
   response_number: 0
-  
 127:
   id: 127
   chat_id: 16
   role: user
   content: open the chest
   response_number: 0
-  
 128:
   id: 128
   chat_id: 16
   role: assistant
   content: Anaka opened the chest and found the prison room key, a knife, and a gem.
   response_number: 0
-  
 129:
   id: 129
   chat_id: 16
   role: user
   content: open the door
   response_number: 0
-  
 130:
   id: 130
   chat_id: 16
@@ -1533,14 +1426,12 @@
   content: The door is now unlocked. Anaka opened the door and stepped out. It's still
     dark, but she can see moonlight slipping in from somewhere.
   response_number: 0
-  
 131:
   id: 131
   chat_id: 16
   role: user
   content: look around
   response_number: 0
-  
 132:
   id: 132
   chat_id: 16
@@ -1549,7 +1440,6 @@
     a guard, is walking to and fro upstairs. There is nowhere else to go and not much
     else to do here.
   response_number: 0
-  
 133:
   id: 133
   chat_id: 16
@@ -1557,7 +1447,6 @@
   content: 'Be brave, go up the staircase. Negotiate with the guard by offering him
     the gem. '
   response_number: 0
-  
 134:
   id: 134
   chat_id: 16
@@ -1569,7 +1458,6 @@
 
     Game over. Would you like to start again?
   response_number: 0
-  
 135:
   id: 135
   chat_id: 17
@@ -1628,14 +1516,12 @@
     display game over for now, and go to scene 1 }}\n\n\nRespond with the first scene
     to start.\n"
   response_number: 0
-  
 136:
   id: 136
   chat_id: 17
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
-  
 137:
   id: 137
   chat_id: 18
@@ -1694,14 +1580,12 @@
     display game over for now, and go to scene 1 }}\n\n\nRespond with the first scene
     to start.\n"
   response_number: 0
-  
 138:
   id: 138
   chat_id: 18
   role: assistant
   content: I'm sorry, but I can't assist with that request.
   response_number: 0
-  
 139:
   id: 139
   chat_id: 19
@@ -1760,35 +1644,30 @@
     display game over for now, and go to scene 1 }}\n\n\nRespond with the first scene
     to start.\n"
   response_number: 0
-  
 140:
   id: 140
   chat_id: 19
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
-  
 141:
   id: 141
   chat_id: 19
   role: user
   content: open the door
   response_number: 0
-  
 142:
   id: 142
   chat_id: 19
   role: assistant
   content: The door is locked.
   response_number: 0
-  
 143:
   id: 143
   chat_id: 19
   role: user
   content: how do I open the door?
   response_number: 0
-  
 144:
   id: 144
   chat_id: 19
@@ -1796,14 +1675,12 @@
   content: It's too dark to see clearly, but there might be something useful around
     the room.
   response_number: 0
-  
 145:
   id: 145
   chat_id: 19
   role: user
   content: look around
   response_number: 0
-  
 146:
   id: 146
   chat_id: 19
@@ -1811,28 +1688,24 @@
   content: It's really dark, but she can make out a dim outline of a chest somewhere
     to the right of her.
   response_number: 0
-  
 147:
   id: 147
   chat_id: 19
   role: user
   content: open the chest
   response_number: 0
-  
 148:
   id: 148
   chat_id: 19
   role: assistant
   content: Inside the chest, Anaka finds the prison room key, a knife, and a gem.
   response_number: 0
-  
 149:
   id: 149
   chat_id: 19
   role: user
   content: open the door
   response_number: 0
-  
 150:
   id: 150
   chat_id: 19
@@ -1840,7 +1713,6 @@
   content: With the prison room key in hand, Anaka unlocks the door and steps out.
     It's still dark, but she can see moonlight slipping in from somewhere.
   response_number: 0
-  
 151:
   id: 151
   chat_id: 20
@@ -1899,21 +1771,18 @@
     display game over for now, and go to scene 1 }}\n\n\nRespond with the first scene
     to start.\n"
   response_number: 0
-  
 152:
   id: 152
   chat_id: 20
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
-  
 153:
   id: 153
   chat_id: 20
   role: user
   content: What do I do?
   response_number: 0
-  
 154:
   id: 154
   chat_id: 20
@@ -1921,28 +1790,24 @@
   content: It's up to you! You can try to open the door or look around the room to
     see if there's anything that might help you.
   response_number: 0
-  
 155:
   id: 155
   chat_id: 20
   role: user
   content: open the door
   response_number: 0
-  
 156:
   id: 156
   chat_id: 20
   role: assistant
   content: The door is locked. You'll need a key to open it.
   response_number: 0
-  
 157:
   id: 157
   chat_id: 20
   role: user
   content: look around
   response_number: 0
-  
 158:
   id: 158
   chat_id: 20
@@ -1950,42 +1815,36 @@
   content: It's really dark, but she can make out a dim outline of a chest somewhere
     to the right of her.
   response_number: 0
-  
 159:
   id: 159
   chat_id: 20
   role: user
   content: open the chest
   response_number: 0
-  
 160:
   id: 160
   chat_id: 20
   role: assistant
   content: Anaka opens the chest and finds a prison room key, a knife, and a gem.
   response_number: 0
-  
 161:
   id: 161
   chat_id: 20
   role: user
   content: drop the knife
   response_number: 0
-  
 162:
   id: 162
   chat_id: 20
   role: assistant
   content: Anaka drops the knife. Now, she has the prison room key and the gem.
   response_number: 0
-  
 163:
   id: 163
   chat_id: 20
   role: user
   content: open the door
   response_number: 0
-  
 164:
   id: 164
   chat_id: 20
@@ -1993,4 +1852,3 @@
   content: Using the prison room key, Anaka unlocks the door and steps out. It's still
     dark, but she can see moonlight slipping in from somewhere.
   response_number: 0
-  
