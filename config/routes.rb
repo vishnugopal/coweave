@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   resources :stories
 
-  resources :chats, only: %i[create show] do
+  resources :playthroughs, only: %i[create show] do
     resources :messages, only: %i[create]
   end
 

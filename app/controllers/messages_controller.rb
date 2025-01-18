@@ -2,9 +2,9 @@ class MessagesController < ApplicationController
   include ActionView::RecordIdentifier
 
   def create
-    @message = Message.create(message_params.merge(chat_id: params[:chat_id], role: "user"))
+    @message = Message.create(message_params.merge(playthrough_id: params[:playthrough_id], role: "user"))
 
-    GetAiResponseJob.perform_later @message.chat_id
+    GetAiResponseJob.perform_later @message.playthrough_id
 
     respond_to do |format|
       format.turbo_stream

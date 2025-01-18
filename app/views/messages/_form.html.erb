@@ -1,6 +1,6 @@
 
-<%= turbo_frame_tag "#{dom_id(chat)}_message_form" do %>
-  <%= form_with(model: Message.new, url: [chat, chat.messages.new], html: { class: "mt-5 sm:flex sm:items-center"  }) do |form| %>
+<%= turbo_frame_tag "#{dom_id(playthrough)}_message_form" do %>
+  <%= form_with(model: Message.new, url: [playthrough, playthrough.messages.new], html: { class: "mt-5 sm:flex sm:items-center"  }) do |form| %>
       <div class="w-full sm:max-w-xs">
         <%= form.text_field :content, class: "block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6", autofocus: true, "x-on:keydown.cmd.enter" => "$event.target.form.requestSubmit();", placeholder: "What do you want to do?" %>
       </div>

@@ -11,21 +11,21 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[8.0].define(version: 2025_01_17_125944) do
-  create_table "chats", force: :cascade do |t|
-    t.integer "story_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["story_id"], name: "index_chats_on_story_id"
-  end
-
   create_table "messages", force: :cascade do |t|
-    t.integer "chat_id", null: false
+    t.integer "playthrough_id", null: false
     t.integer "role", default: 0, null: false
     t.string "content", null: false
     t.integer "response_number", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["chat_id"], name: "index_messages_on_chat_id"
+    t.index ["playthrough_id"], name: "index_messages_on_playthrough_id"
+  end
+
+  create_table "playthroughs", force: :cascade do |t|
+    t.integer "story_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["story_id"], name: "index_playthroughs_on_story_id"
   end
 
   create_table "stories", force: :cascade do |t|
@@ -35,6 +35,6 @@ ActiveRecord::Schema[8.0].define(version: 2025_01_17_125944) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "chats", "stories"
-  add_foreign_key "messages", "chats"
+  add_foreign_key "messages", "playthroughs"
+  add_foreign_key "playthroughs", "stories"
 end

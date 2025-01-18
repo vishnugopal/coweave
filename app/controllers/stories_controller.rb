@@ -13,10 +13,10 @@ class StoriesController < ApplicationController
       respond_to do |format|
         format.html do
           if params[:commit] == "Play"
-            @chat = @story.chats.create
-            @chat.create_initial_developer_prompt
-            GetAiResponseJob.perform_later @chat.id
-            redirect_to chat_path(@chat)
+            @playthrough = @story.playthroughs.create
+            @playthrough.create_initial_developer_prompt
+            GetAiResponseJob.perform_later @playthrough.id
+            redirect_to playthrough_path(@playthrough)
           else
             redirect_to edit_story_path(@story), notice: "Story was successfully updated."
           end

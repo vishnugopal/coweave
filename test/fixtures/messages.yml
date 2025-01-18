@@ -1,33 +1,34 @@
 ---
 1:
   id: 1
-  chat_id: 1
+  playthrough_id: 1
   role: user
   content: Hello
   response_number: 0
 2:
   id: 2
-  chat_id: 1
+  playthrough_id: 1
   role: assistant
   content: Hi! How can I assist you today?
   response_number: 0
 3:
   id: 3
-  chat_id: 1
+  playthrough_id: 1
   role: user
   content: Just chatting
   response_number: 0
 4:
   id: 4
-  chat_id: 1
+  playthrough_id: 1
   role: assistant
   content: That's great! I'm here to chat with you. How are you doing today?
   response_number: 0
 5:
   id: 5
-  chat_id: 6
+  playthrough_id: 6
   role: developer
-  content: "I want you to act as an interactive text fiction simulator.\nI'll provide
+  content:
+    "I want you to act as an interactive text fiction simulator.\nI'll provide
     you with a set of scenes and instructions to parse input from the user between
     {{ and }}.\nThe text outside these curly braces are scene descriptions to be shown
     to the user.\nOnly show one scene at a time.\nYou can change the scene description
@@ -80,7 +81,7 @@
   response_number: 0
 6:
   id: 6
-  chat_id: 6
+  playthrough_id: 6
   role: assistant
   content: |-
     Anaka woke up in a dim, dark room. She could barely make out the door.
@@ -88,13 +89,13 @@
   response_number: 0
 7:
   id: 7
-  chat_id: 6
+  playthrough_id: 6
   role: user
   content: Look around
   response_number: 0
 8:
   id: 8
-  chat_id: 6
+  playthrough_id: 6
   role: assistant
   content: |-
     It's really dark, but she can make out a dim outline of a chest somewhere to the right of her.
@@ -102,26 +103,27 @@
   response_number: 0
 9:
   id: 9
-  chat_id: 6
+  playthrough_id: 6
   role: user
   content: Hello
   response_number: 0
 10:
   id: 10
-  chat_id: 6
+  playthrough_id: 6
   role: assistant
-  content: It's really dark in the room, Anaka can barely see anything. Try looking
+  content:
+    It's really dark in the room, Anaka can barely see anything. Try looking
     around for more details.
   response_number: 0
 11:
   id: 11
-  chat_id: 6
+  playthrough_id: 6
   role: user
   content: Look around
   response_number: 0
 12:
   id: 12
-  chat_id: 6
+  playthrough_id: 6
   role: assistant
   content: |-
     It's really dark, but she can make out a dim outline of a chest somewhere to the right of her.
@@ -129,9 +131,10 @@
   response_number: 0
 13:
   id: 13
-  chat_id: 7
+  playthrough_id: 7
   role: developer
-  content: "I want you to act as an interactive text fiction simulator.\nI'll provide
+  content:
+    "I want you to act as an interactive text fiction simulator.\nI'll provide
     you with a set of scenes and instructions to parse input from the user between
     {{ and }}.\nThe text outside these curly braces are scene descriptions to be shown
     to the user.\nOnly show one scene at a time.\nYou can change the scene description
@@ -185,58 +188,62 @@
   response_number: 0
 14:
   id: 14
-  chat_id: 7
+  playthrough_id: 7
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
 15:
   id: 15
-  chat_id: 7
+  playthrough_id: 7
   role: user
   content: Hello
   response_number: 0
 16:
   id: 16
-  chat_id: 7
+  playthrough_id: 7
   role: assistant
-  content: "{{ if Anaka tries to open the door, respond that it's locked unless she
+  content:
+    "{{ if Anaka tries to open the door, respond that it's locked unless she
     has the prison room key. if she looks around the room or investigates, move to
     Scene 3. If she has the prison room key, respond that the door is now unlocked,
     and move to Scene 2.  }}"
   response_number: 0
 17:
   id: 17
-  chat_id: 7
+  playthrough_id: 7
   role: user
   content: Look around
   response_number: 0
 18:
   id: 18
-  chat_id: 7
+  playthrough_id: 7
   role: assistant
-  content: It's really dark, but she can make out a dim outline of a chest somewhere
+  content:
+    It's really dark, but she can make out a dim outline of a chest somewhere
     to the right of her.
   response_number: 0
 19:
   id: 19
-  chat_id: 7
+  playthrough_id: 7
   role: user
   content: Hello!
   response_number: 0
 20:
   id: 20
-  chat_id: 7
+  playthrough_id: 7
   role: assistant
-  content: "{{ if Anaka tries to open the door, respond that it's locked unless she
+  content:
+    "{{ if Anaka tries to open the door, respond that it's locked unless she
     has the prison room key. if she looks around the room or investigates, move to
     Scene 3. If she has the prison room key, respond that the door is now unlocked,
     and move to Scene 2.  }}"
   response_number: 0
 21:
   id: 21
-  chat_id: 8
+  playthrough_id: 8
   role: developer
-  content: "I want you to act as an interactive text fiction simulator.\nI'll provide
+  content:
+    "I want you to act as an interactive text fiction simulator.\nI'll provide
     you with a set of scenes and instructions to parse input from the user between
     {{ and }}.\nThe text outside these curly braces are scene descriptions to be shown
     to the user.\nOnly show one scene at a time.\nYou can change the scene description
@@ -290,109 +297,114 @@
   response_number: 0
 22:
   id: 22
-  chat_id: 8
+  playthrough_id: 8
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
 23:
   id: 23
-  chat_id: 8
+  playthrough_id: 8
   role: user
   content: Hello
   response_number: 0
 24:
   id: 24
-  chat_id: 8
+  playthrough_id: 8
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
 25:
   id: 25
-  chat_id: 8
+  playthrough_id: 8
   role: user
   content: Look around
   response_number: 0
 26:
   id: 26
-  chat_id: 8
+  playthrough_id: 8
   role: assistant
-  content: It's really dark, but she can make out a dim outline of a chest somewhere
+  content:
+    It's really dark, but she can make out a dim outline of a chest somewhere
     to the right of her.
   response_number: 0
 27:
   id: 27
-  chat_id: 8
+  playthrough_id: 8
   role: user
   content: Break the chest
   response_number: 0
 28:
   id: 28
-  chat_id: 8
+  playthrough_id: 8
   role: assistant
-  content: It's too dark to effectively break the chest, but Anaka carefully tries
+  content:
+    It's too dark to effectively break the chest, but Anaka carefully tries
     to open it instead. Inside, she finds the prison room key, a knife, and a gem.
   response_number: 0
 29:
   id: 29
-  chat_id: 8
+  playthrough_id: 8
   role: user
   content: Nice, what do I do with this?
   response_number: 0
 30:
   id: 30
-  chat_id: 8
+  playthrough_id: 8
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
 31:
   id: 31
-  chat_id: 8
+  playthrough_id: 8
   role: user
   content: Can I open the door?
   response_number: 0
 32:
   id: 32
-  chat_id: 8
+  playthrough_id: 8
   role: assistant
-  content: The door is now unlocked with the key Anaka found. She opens it and steps
+  content:
+    The door is now unlocked with the key Anaka found. She opens it and steps
     out. It's still dark, but she can see moonlight slipping in from somewhere.
   response_number: 0
 33:
   id: 33
-  chat_id: 8
+  playthrough_id: 8
   role: user
   content: Where am I now?
   response_number: 0
 34:
   id: 34
-  chat_id: 8
+  playthrough_id: 8
   role: assistant
-  content: Anaka opened the door and stepped out. It's still dark, but she can see
+  content:
+    Anaka opened the door and stepped out. It's still dark, but she can see
     moonlight slipping in from somewhere. The room has a staircase leading up, and
     it looks like there's somebody walking to and fro upstairs.
   response_number: 0
 35:
   id: 35
-  chat_id: 8
+  playthrough_id: 8
   role: user
   content: Is there anything else in the room?
   response_number: 0
 36:
   id: 36
-  chat_id: 8
+  playthrough_id: 8
   role: assistant
-  content: There is nowhere else to go and nothing much to do in the room besides
+  content:
+    There is nowhere else to go and nothing much to do in the room besides
     the staircase leading up.
   response_number: 0
 37:
   id: 37
-  chat_id: 8
+  playthrough_id: 8
   role: user
   content: go up the staircase
   response_number: 0
 38:
   id: 38
-  chat_id: 8
+  playthrough_id: 8
   role: assistant
   content: |-
     There's a guy who's dressed like a guard right up at the top of the staircase. The instant he spots her, the guard takes out a sword and swings.
@@ -401,9 +413,10 @@
   response_number: 0
 39:
   id: 39
-  chat_id: 9
+  playthrough_id: 9
   role: developer
-  content: "I want you to act as an interactive text fiction simulator.\nI'll provide
+  content:
+    "I want you to act as an interactive text fiction simulator.\nI'll provide
     you with a set of scenes and instructions to parse input from the user between
     {{ and }}.\nThe text outside these curly braces are scene descriptions to be shown
     to the user.\nOnly show one scene at a time.\nYou can change the scene description
@@ -457,15 +470,16 @@
   response_number: 0
 40:
   id: 40
-  chat_id: 9
+  playthrough_id: 9
   role: assistant
-  content: ''
+  content: ""
   response_number: 0
 41:
   id: 41
-  chat_id: 10
+  playthrough_id: 10
   role: developer
-  content: "I want you to act as an interactive text fiction simulator.\nI'll provide
+  content:
+    "I want you to act as an interactive text fiction simulator.\nI'll provide
     you with a set of scenes and instructions to parse input from the user between
     {{ and }}.\nThe text outside these curly braces are scene descriptions to be shown
     to the user.\nOnly show one scene at a time.\nYou can change the scene description
@@ -519,15 +533,16 @@
   response_number: 0
 42:
   id: 42
-  chat_id: 10
+  playthrough_id: 10
   role: assistant
-  content: ''
+  content: ""
   response_number: 0
 43:
   id: 43
-  chat_id: 11
+  playthrough_id: 11
   role: developer
-  content: "I want you to act as an interactive text fiction simulator.\nI'll provide
+  content:
+    "I want you to act as an interactive text fiction simulator.\nI'll provide
     you with a set of scenes and instructions to parse input from the user between
     {{ and }}.\nThe text outside these curly braces are scene descriptions to be shown
     to the user.\nOnly show one scene at a time.\nYou can change the scene description
@@ -581,154 +596,161 @@
   response_number: 0
 44:
   id: 44
-  chat_id: 11
+  playthrough_id: 11
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
 45:
   id: 45
-  chat_id: 11
+  playthrough_id: 11
   role: user
   content: Hello
   response_number: 0
 46:
   id: 46
-  chat_id: 11
+  playthrough_id: 11
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
 47:
   id: 47
-  chat_id: 11
+  playthrough_id: 11
   role: user
   content: Can I open the door?
   response_number: 0
 48:
   id: 48
-  chat_id: 11
+  playthrough_id: 11
   role: assistant
   content: The door is locked.
   response_number: 0
 49:
   id: 49
-  chat_id: 11
+  playthrough_id: 11
   role: user
   content: What should I do?
   response_number: 0
 50:
   id: 50
-  chat_id: 11
+  playthrough_id: 11
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
 51:
   id: 51
-  chat_id: 11
+  playthrough_id: 11
   role: user
   content: Look around
   response_number: 0
 52:
   id: 52
-  chat_id: 11
+  playthrough_id: 11
   role: assistant
-  content: It's really dark, but she can make out a dim outline of a chest somewhere
+  content:
+    It's really dark, but she can make out a dim outline of a chest somewhere
     to the right of her.
   response_number: 0
 53:
   id: 53
-  chat_id: 11
+  playthrough_id: 11
   role: user
   content: Open the chest
   response_number: 0
 54:
   id: 54
-  chat_id: 11
+  playthrough_id: 11
   role: assistant
   content: Anaka opens the chest and finds the prison room key, a knife, and a gem.
   response_number: 0
 55:
   id: 55
-  chat_id: 11
+  playthrough_id: 11
   role: user
   content: Take all of it
   response_number: 0
 56:
   id: 56
-  chat_id: 11
+  playthrough_id: 11
   role: assistant
   content: Anaka takes the prison room key, the knife, and the gem.
   response_number: 0
 57:
   id: 57
-  chat_id: 11
+  playthrough_id: 11
   role: user
   content: open the door
   response_number: 0
 58:
   id: 58
-  chat_id: 11
+  playthrough_id: 11
   role: assistant
-  content: Anaka unlocked the door with the prison room key and stepped out. It's
+  content:
+    Anaka unlocked the door with the prison room key and stepped out. It's
     still dark, but she can see moonlight slipping in from somewhere.
   response_number: 0
 59:
   id: 59
-  chat_id: 11
+  playthrough_id: 11
   role: user
   content: What's in the room?
   response_number: 0
 60:
   id: 60
-  chat_id: 11
+  playthrough_id: 11
   role: assistant
-  content: The room has a staircase leading up, and it looks like somebody (a guard?)
+  content:
+    The room has a staircase leading up, and it looks like somebody (a guard?)
     is walking to and fro upstairs.
   response_number: 0
 61:
   id: 61
-  chat_id: 11
+  playthrough_id: 11
   role: user
   content: Go up the stairs and use the gem to convince the guard to let you escape.
   response_number: 0
 62:
   id: 62
-  chat_id: 11
+  playthrough_id: 11
   role: assistant
-  content: Anaka starts to go up the stairs, but the guard spots her immediately.
+  content:
+    Anaka starts to go up the stairs, but the guard spots her immediately.
     He takes out a sword and swings.
   response_number: 0
 63:
   id: 63
-  chat_id: 11
+  playthrough_id: 11
   role: user
   content: tell him about the gem
   response_number: 0
 64:
   id: 64
-  chat_id: 11
+  playthrough_id: 11
   role: assistant
-  content: Anaka tries to explain about the gem to the guard, but he is already in
+  content:
+    Anaka tries to explain about the gem to the guard, but he is already in
     a defensive stance. He lunges at her with his sword, leaving no time for negotiation.
   response_number: 0
 65:
   id: 65
-  chat_id: 11
+  playthrough_id: 11
   role: user
   content: kill the guard using the knife
   response_number: 0
 66:
   id: 66
-  chat_id: 11
+  playthrough_id: 11
   role: assistant
-  content: Anaka sneaks up behind the guard and swiftly plunges the knife into him.
+  content:
+    Anaka sneaks up behind the guard and swiftly plunges the knife into him.
     The guard collapses without a sound, and his blood slowly seeps down onto the
     floor. Anaka feels sick, but what else could she do?
   response_number: 0
 67:
   id: 67
-  chat_id: 12
+  playthrough_id: 12
   role: developer
-  content: "I want you to act as an interactive text fiction simulator.\nI'll provide
+  content:
+    "I want you to act as an interactive text fiction simulator.\nI'll provide
     you with a set of scenes and instructions to parse input from the user between
     {{ and }}.\nThe text outside these curly braces are scene descriptions to be shown
     to the user.\nOnly show one scene at a time.\nYou can change the scene description
@@ -782,84 +804,88 @@
   response_number: 0
 68:
   id: 68
-  chat_id: 12
+  playthrough_id: 12
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
 69:
   id: 69
-  chat_id: 12
+  playthrough_id: 12
   role: user
   content: open the odo
   response_number: 0
 70:
   id: 70
-  chat_id: 12
+  playthrough_id: 12
   role: assistant
   content: The door is locked.
   response_number: 0
 71:
   id: 71
-  chat_id: 12
+  playthrough_id: 12
   role: user
   content: look around
   response_number: 0
 72:
   id: 72
-  chat_id: 12
+  playthrough_id: 12
   role: assistant
-  content: It's really dark, but she can make out a dim outline of a chest somewhere
+  content:
+    It's really dark, but she can make out a dim outline of a chest somewhere
     to the right of her.
   response_number: 0
 73:
   id: 73
-  chat_id: 12
+  playthrough_id: 12
   role: user
   content: open the chest
   response_number: 0
 74:
   id: 74
-  chat_id: 12
+  playthrough_id: 12
   role: assistant
   content: Inside the chest, Anaka finds the prison room key, a knife, and a gem.
   response_number: 0
 75:
   id: 75
-  chat_id: 12
+  playthrough_id: 12
   role: user
   content: open the door
   response_number: 0
 76:
   id: 76
-  chat_id: 12
+  playthrough_id: 12
   role: assistant
-  content: Anaka unlocked the door with the key and stepped out. It's still dark,
+  content:
+    Anaka unlocked the door with the key and stepped out. It's still dark,
     but she can see moonlight slipping in from somewhere.
   response_number: 0
 77:
   id: 77
-  chat_id: 12
+  playthrough_id: 12
   role: user
   content: look around
   response_number: 0
 78:
   id: 78
-  chat_id: 12
+  playthrough_id: 12
   role: assistant
-  content: The room has a staircase leading up, and it looks like there's somebody,
+  content:
+    The room has a staircase leading up, and it looks like there's somebody,
     possibly a guard, walking to and fro upstairs. There's nowhere else to go and
     nothing much to do here.
   response_number: 0
 79:
   id: 79
-  chat_id: 12
+  playthrough_id: 12
   role: user
-  content: go up the stairs, and try to convince the guard to free you by giving him
+  content:
+    go up the stairs, and try to convince the guard to free you by giving him
     the gem
   response_number: 0
 80:
   id: 80
-  chat_id: 12
+  playthrough_id: 12
   role: assistant
   content: |-
     There's a guy who's dressed like a guard right up at the top of the staircase. The instant he spots her, the guard takes out a sword and swings. Anaka is dead. Game over.
@@ -868,9 +894,10 @@
   response_number: 0
 81:
   id: 81
-  chat_id: 13
+  playthrough_id: 13
   role: developer
-  content: "I want you to act as an interactive text fiction simulator.\nI'll provide
+  content:
+    "I want you to act as an interactive text fiction simulator.\nI'll provide
     you with a set of scenes and instructions to parse input from the user between
     {{ and }}.\nThe text outside these curly braces are scene descriptions to be shown
     to the user.\nOnly show one scene at a time.\nYou can change the scene description
@@ -924,94 +951,100 @@
   response_number: 0
 82:
   id: 82
-  chat_id: 13
+  playthrough_id: 13
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
 83:
   id: 83
-  chat_id: 13
+  playthrough_id: 13
   role: user
   content: look around
   response_number: 0
 84:
   id: 84
-  chat_id: 13
+  playthrough_id: 13
   role: assistant
-  content: It's really dark, but she can make out a dim outline of a chest somewhere
+  content:
+    It's really dark, but she can make out a dim outline of a chest somewhere
     to the right of her.
   response_number: 0
 85:
   id: 85
-  chat_id: 13
+  playthrough_id: 13
   role: user
   content: open chest
   response_number: 0
 86:
   id: 86
-  chat_id: 13
+  playthrough_id: 13
   role: assistant
   content: Anaka opened the chest and found the prison room key, a knife, and a gem.
   response_number: 0
 87:
   id: 87
-  chat_id: 13
+  playthrough_id: 13
   role: user
   content: take all of it
   response_number: 0
 88:
   id: 88
-  chat_id: 13
+  playthrough_id: 13
   role: assistant
   content: Anaka took the prison room key, the knife, and the gem.
   response_number: 0
 89:
   id: 89
-  chat_id: 13
+  playthrough_id: 13
   role: user
   content: open door
   response_number: 0
 90:
   id: 90
-  chat_id: 13
+  playthrough_id: 13
   role: assistant
-  content: The door is now unlocked. Anaka opened the door and stepped out. It's still
+  content:
+    The door is now unlocked. Anaka opened the door and stepped out. It's still
     dark, but she can see moonlight slipping in from somewhere.
   response_number: 0
 91:
   id: 91
-  chat_id: 13
+  playthrough_id: 13
   role: user
   content: look around
   response_number: 0
 92:
   id: 92
-  chat_id: 13
+  playthrough_id: 13
   role: assistant
-  content: The room has a staircase leading up, and it looks like somebody, possibly
+  content:
+    The room has a staircase leading up, and it looks like somebody, possibly
     a guard, is walking to and fro upstairs. There is nowhere else to go and nothing
     much to do.
   response_number: 0
 93:
   id: 93
-  chat_id: 13
+  playthrough_id: 13
   role: user
-  content: 'Be brave, go up the staircase. Negotiate with the guard by offering him
-    the gem. '
+  content:
+    "Be brave, go up the staircase. Negotiate with the guard by offering him
+    the gem. "
   response_number: 0
 94:
   id: 94
-  chat_id: 13
+  playthrough_id: 13
   role: assistant
-  content: "As Anaka bravely went up the staircase without sneaking, the guard immediately
+  content:
+    "As Anaka bravely went up the staircase without sneaking, the guard immediately
     spotted her. The instant he saw her, he took out a sword and swung. \n\nAnaka
     is dead. Game over. Would you like to play again?"
   response_number: 0
 95:
   id: 95
-  chat_id: 14
+  playthrough_id: 14
   role: developer
-  content: "I want you to act as an interactive text fiction simulator.\nI'll provide
+  content:
+    "I want you to act as an interactive text fiction simulator.\nI'll provide
     you with a set of scenes and instructions to parse input from the user between
     {{ and }}.\nThe text outside these curly braces are scene descriptions to be shown
     to the user.\nOnly show one scene at a time.\nYou can change the scene description
@@ -1067,72 +1100,76 @@
   response_number: 0
 96:
   id: 96
-  chat_id: 14
+  playthrough_id: 14
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
 97:
   id: 97
-  chat_id: 14
+  playthrough_id: 14
   role: user
   content: look around
   response_number: 0
 98:
   id: 98
-  chat_id: 14
+  playthrough_id: 14
   role: assistant
-  content: It's really dark, but she can make out a dim outline of a chest somewhere
+  content:
+    It's really dark, but she can make out a dim outline of a chest somewhere
     to the right of her.
   response_number: 0
 99:
   id: 99
-  chat_id: 14
+  playthrough_id: 14
   role: user
   content: open chest
   response_number: 0
 100:
   id: 100
-  chat_id: 14
+  playthrough_id: 14
   role: assistant
   content: Inside the chest, Anaka finds the prison room key, a knife, and a gem.
   response_number: 0
 101:
   id: 101
-  chat_id: 14
+  playthrough_id: 14
   role: user
   content: open door
   response_number: 0
 102:
   id: 102
-  chat_id: 14
+  playthrough_id: 14
   role: assistant
-  content: The door is now unlocked. Anaka opened the door and stepped out. It's still
+  content:
+    The door is now unlocked. Anaka opened the door and stepped out. It's still
     dark, but she can see moonlight slipping in from somewhere.
   response_number: 0
 103:
   id: 103
-  chat_id: 14
+  playthrough_id: 14
   role: user
   content: look around
   response_number: 0
 104:
   id: 104
-  chat_id: 14
+  playthrough_id: 14
   role: assistant
-  content: The room has a staircase leading up, and it looks like somebody, possibly
+  content:
+    The room has a staircase leading up, and it looks like somebody, possibly
     a guard, is walking to and fro upstairs. There is nowhere else to go and nothing
     much to do.
   response_number: 0
 105:
   id: 105
-  chat_id: 14
+  playthrough_id: 14
   role: user
-  content: 'Be brave, go up the staircase. Negotiate with the guard by offering him
-    the gem. '
+  content:
+    "Be brave, go up the staircase. Negotiate with the guard by offering him
+    the gem. "
   response_number: 0
 106:
   id: 106
-  chat_id: 14
+  playthrough_id: 14
   role: assistant
   content: |-
     Anaka quietly ascends the staircase, trying to make as little noise as possible. As she reaches the top, she spots the guard with his back turned. She clears her throat to get his attention, and the guard spins around, his eyes narrowing at her.
@@ -1145,15 +1182,16 @@
   response_number: 0
 107:
   id: 107
-  chat_id: 14
+  playthrough_id: 14
   role: user
-  content: 'Thank the guard and ask him any clues to survive '
+  content: "Thank the guard and ask him any clues to survive "
   response_number: 0
 108:
   id: 108
-  chat_id: 14
+  playthrough_id: 14
   role: assistant
-  content: "Anaka nods in gratitude and quietly thanks the guard. \"Do you have any
+  content:
+    "Anaka nods in gratitude and quietly thanks the guard. \"Do you have any
     clues or advice that might help me survive this place?\" she asks.\n\nThe guard,
     now somewhat more relaxed, leans against the wall and whispers, \"Stick to the
     shadows and keep quiet. Most of the other guards won't be as easy-going as me.
@@ -1162,13 +1200,13 @@
   response_number: 0
 109:
   id: 109
-  chat_id: 14
+  playthrough_id: 14
   role: user
-  content: 'Ask the guard to give her a weapon '
+  content: "Ask the guard to give her a weapon "
   response_number: 0
 110:
   id: 110
-  chat_id: 14
+  playthrough_id: 14
   role: assistant
   content: |-
     Anaka looks at the guard and asks, "Can you spare a weapon? Anything to help me defend myself?"
@@ -1179,13 +1217,13 @@
   response_number: 0
 111:
   id: 111
-  chat_id: 14
+  playthrough_id: 14
   role: user
-  content: 'Ask him the way to get out '
+  content: "Ask him the way to get out "
   response_number: 0
 112:
   id: 112
-  chat_id: 14
+  playthrough_id: 14
   role: assistant
   content: |-
     Anaka takes a deep breath and asks, "Which way is the best to get out of here?"
@@ -1196,13 +1234,13 @@
   response_number: 0
 113:
   id: 113
-  chat_id: 14
+  playthrough_id: 14
   role: user
   content: Ask the guard “if I spot someone how can I negotiate with them”
   response_number: 0
 114:
   id: 114
-  chat_id: 14
+  playthrough_id: 14
   role: assistant
   content: |-
     Anaka looks at the guard inquisitively and asks, "If I spot someone else, how can I negotiate with them?"
@@ -1213,13 +1251,13 @@
   response_number: 0
 115:
   id: 115
-  chat_id: 14
+  playthrough_id: 14
   role: user
-  content: 'Go straight ahead '
+  content: "Go straight ahead "
   response_number: 0
 116:
   id: 116
-  chat_id: 14
+  playthrough_id: 14
   role: assistant
   content: |-
     Anaka moves straight ahead, sticking to the shadows as the guard advised. She finds herself in a long corridor. The right seems to lead to a dead-end with more cells, but to the left, she can see some sort of office with an open door leading to the moonlight outside. There is a man there, who looks up as Anaka walks in. He seems to be drunk.
@@ -1228,15 +1266,16 @@
   response_number: 0
 117:
   id: 117
-  chat_id: 14
+  playthrough_id: 14
   role: user
-  content: 'Tell the guard “surrender otherwise the great dragon will tear you apart!
+  content:
+    "Tell the guard “surrender otherwise the great dragon will tear you apart!
     Tell me the way to get out from here. If you help me, I will help you sometime
-    in the future” '
+    in the future” "
   response_number: 0
 118:
   id: 118
-  chat_id: 14
+  playthrough_id: 14
   role: assistant
   content: |-
     Anaka stands confidently and says, "Surrender now, or the great dragon will tear you apart! Tell me the way to get out of here, and if you help me, I'll return the favor in the future."
@@ -1247,24 +1286,26 @@
   response_number: 0
 119:
   id: 119
-  chat_id: 14
+  playthrough_id: 14
   role: user
-  content: 'Go out the door '
+  content: "Go out the door "
   response_number: 0
 120:
   id: 120
-  chat_id: 14
+  playthrough_id: 14
   role: assistant
-  content: "Anaka quickly slips through the door, leaving the drunken guard behind.
+  content:
+    "Anaka quickly slips through the door, leaving the drunken guard behind.
     She steps into the cool night air, finally escaping the confines of the prison.
     The moonlight bathes the surroundings, and Anaka takes a deep breath of freedom.
     Her story is just beginning! \n\nGame Over for now. Would you like to play again?"
   response_number: 0
 121:
   id: 121
-  chat_id: 15
+  playthrough_id: 15
   role: developer
-  content: "I want you to act as an interactive text fiction simulator.\nI'll provide
+  content:
+    "I want you to act as an interactive text fiction simulator.\nI'll provide
     you with a set of scenes and instructions to parse input from the user between
     {{ and }}.\nThe text outside these curly braces are scene descriptions to be shown
     to the user.\nOnly show one scene at a time.\nYou can change the scene description
@@ -1320,15 +1361,16 @@
   response_number: 0
 122:
   id: 122
-  chat_id: 15
+  playthrough_id: 15
   role: assistant
   content: I'm sorry, I can't comply with that request.
   response_number: 0
 123:
   id: 123
-  chat_id: 16
+  playthrough_id: 16
   role: developer
-  content: "I want you to act as an interactive text fiction simulator.\nI'll provide
+  content:
+    "I want you to act as an interactive text fiction simulator.\nI'll provide
     you with a set of scenes and instructions to parse input from the user between
     {{ and }}.\nThe text outside these curly braces are scene descriptions to be shown
     to the user.\nOnly show one scene at a time.\nYou can change the scene description
@@ -1384,72 +1426,76 @@
   response_number: 0
 124:
   id: 124
-  chat_id: 16
+  playthrough_id: 16
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
 125:
   id: 125
-  chat_id: 16
+  playthrough_id: 16
   role: user
   content: look around
   response_number: 0
 126:
   id: 126
-  chat_id: 16
+  playthrough_id: 16
   role: assistant
-  content: It's really dark, but she can make out a dim outline of a chest somewhere
+  content:
+    It's really dark, but she can make out a dim outline of a chest somewhere
     to the right of her.
   response_number: 0
 127:
   id: 127
-  chat_id: 16
+  playthrough_id: 16
   role: user
   content: open the chest
   response_number: 0
 128:
   id: 128
-  chat_id: 16
+  playthrough_id: 16
   role: assistant
   content: Anaka opened the chest and found the prison room key, a knife, and a gem.
   response_number: 0
 129:
   id: 129
-  chat_id: 16
+  playthrough_id: 16
   role: user
   content: open the door
   response_number: 0
 130:
   id: 130
-  chat_id: 16
+  playthrough_id: 16
   role: assistant
-  content: The door is now unlocked. Anaka opened the door and stepped out. It's still
+  content:
+    The door is now unlocked. Anaka opened the door and stepped out. It's still
     dark, but she can see moonlight slipping in from somewhere.
   response_number: 0
 131:
   id: 131
-  chat_id: 16
+  playthrough_id: 16
   role: user
   content: look around
   response_number: 0
 132:
   id: 132
-  chat_id: 16
+  playthrough_id: 16
   role: assistant
-  content: The room has a staircase leading up, and it looks like somebody, possibly
+  content:
+    The room has a staircase leading up, and it looks like somebody, possibly
     a guard, is walking to and fro upstairs. There is nowhere else to go and not much
     else to do here.
   response_number: 0
 133:
   id: 133
-  chat_id: 16
+  playthrough_id: 16
   role: user
-  content: 'Be brave, go up the staircase. Negotiate with the guard by offering him
-    the gem. '
+  content:
+    "Be brave, go up the staircase. Negotiate with the guard by offering him
+    the gem. "
   response_number: 0
 134:
   id: 134
-  chat_id: 16
+  playthrough_id: 16
   role: assistant
   content: |-
     Anaka decided to bravely ascend the staircase. As she reached the top, the guard spotted her and immediately raised his sword, ready to strike.
@@ -1460,9 +1506,10 @@
   response_number: 0
 135:
   id: 135
-  chat_id: 17
+  playthrough_id: 17
   role: developer
-  content: "I want you to act as an interactive text fiction simulator.\nI'll provide
+  content:
+    "I want you to act as an interactive text fiction simulator.\nI'll provide
     you with a set of scenes and instructions to parse input from the user between
     {{ and }}.\nThe text outside these curly braces are scene descriptions to be shown
     to the user.\nOnly show one scene at a time.\nYou can change the scene description
@@ -1518,15 +1565,16 @@
   response_number: 0
 136:
   id: 136
-  chat_id: 17
+  playthrough_id: 17
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
 137:
   id: 137
-  chat_id: 18
+  playthrough_id: 18
   role: developer
-  content: "I want you to act as an interactive text fiction simulator.\nI'll provide
+  content:
+    "I want you to act as an interactive text fiction simulator.\nI'll provide
     you with a set of scenes and instructions to parse input from the user between
     {{ and }}.\nThe text outside these curly braces are scene descriptions to be shown
     to the user.\nOnly show one scene at a time.\nYou can change the scene description
@@ -1582,15 +1630,16 @@
   response_number: 0
 138:
   id: 138
-  chat_id: 18
+  playthrough_id: 18
   role: assistant
   content: I'm sorry, but I can't assist with that request.
   response_number: 0
 139:
   id: 139
-  chat_id: 19
+  playthrough_id: 19
   role: developer
-  content: "I want you to act as an interactive text fiction simulator.\nI'll provide
+  content:
+    "I want you to act as an interactive text fiction simulator.\nI'll provide
     you with a set of scenes and instructions to parse input from the user between
     {{ and }}.\nThe text outside these curly braces are scene descriptions to be shown
     to the user.\nOnly show one scene at a time.\nYou can change the scene description
@@ -1646,78 +1695,82 @@
   response_number: 0
 140:
   id: 140
-  chat_id: 19
+  playthrough_id: 19
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
 141:
   id: 141
-  chat_id: 19
+  playthrough_id: 19
   role: user
   content: open the door
   response_number: 0
 142:
   id: 142
-  chat_id: 19
+  playthrough_id: 19
   role: assistant
   content: The door is locked.
   response_number: 0
 143:
   id: 143
-  chat_id: 19
+  playthrough_id: 19
   role: user
   content: how do I open the door?
   response_number: 0
 144:
   id: 144
-  chat_id: 19
+  playthrough_id: 19
   role: assistant
-  content: It's too dark to see clearly, but there might be something useful around
+  content:
+    It's too dark to see clearly, but there might be something useful around
     the room.
   response_number: 0
 145:
   id: 145
-  chat_id: 19
+  playthrough_id: 19
   role: user
   content: look around
   response_number: 0
 146:
   id: 146
-  chat_id: 19
+  playthrough_id: 19
   role: assistant
-  content: It's really dark, but she can make out a dim outline of a chest somewhere
+  content:
+    It's really dark, but she can make out a dim outline of a chest somewhere
     to the right of her.
   response_number: 0
 147:
   id: 147
-  chat_id: 19
+  playthrough_id: 19
   role: user
   content: open the chest
   response_number: 0
 148:
   id: 148
-  chat_id: 19
+  playthrough_id: 19
   role: assistant
   content: Inside the chest, Anaka finds the prison room key, a knife, and a gem.
   response_number: 0
 149:
   id: 149
-  chat_id: 19
+  playthrough_id: 19
   role: user
   content: open the door
   response_number: 0
 150:
   id: 150
-  chat_id: 19
+  playthrough_id: 19
   role: assistant
-  content: With the prison room key in hand, Anaka unlocks the door and steps out.
+  content:
+    With the prison room key in hand, Anaka unlocks the door and steps out.
     It's still dark, but she can see moonlight slipping in from somewhere.
   response_number: 0
 151:
   id: 151
-  chat_id: 20
+  playthrough_id: 20
   role: developer
-  content: "I want you to act as an interactive text fiction simulator.\nI'll provide
+  content:
+    "I want you to act as an interactive text fiction simulator.\nI'll provide
     you with a set of scenes and instructions to parse input from the user between
     {{ and }}.\nThe text outside these curly braces are scene descriptions to be shown
     to the user.\nOnly show one scene at a time.\nYou can change the scene description
@@ -1773,82 +1826,85 @@
   response_number: 0
 152:
   id: 152
-  chat_id: 20
+  playthrough_id: 20
   role: assistant
   content: Anaka woke up in a dim, dark room. She could barely make out the door.
   response_number: 0
 153:
   id: 153
-  chat_id: 20
+  playthrough_id: 20
   role: user
   content: What do I do?
   response_number: 0
 154:
   id: 154
-  chat_id: 20
+  playthrough_id: 20
   role: assistant
-  content: It's up to you! You can try to open the door or look around the room to
+  content:
+    It's up to you! You can try to open the door or look around the room to
     see if there's anything that might help you.
   response_number: 0
 155:
   id: 155
-  chat_id: 20
+  playthrough_id: 20
   role: user
   content: open the door
   response_number: 0
 156:
   id: 156
-  chat_id: 20
+  playthrough_id: 20
   role: assistant
   content: The door is locked. You'll need a key to open it.
   response_number: 0
 157:
   id: 157
-  chat_id: 20
+  playthrough_id: 20
   role: user
   content: look around
   response_number: 0
 158:
   id: 158
-  chat_id: 20
+  playthrough_id: 20
   role: assistant
-  content: It's really dark, but she can make out a dim outline of a chest somewhere
+  content:
+    It's really dark, but she can make out a dim outline of a chest somewhere
     to the right of her.
   response_number: 0
 159:
   id: 159
-  chat_id: 20
+  playthrough_id: 20
   role: user
   content: open the chest
   response_number: 0
 160:
   id: 160
-  chat_id: 20
+  playthrough_id: 20
   role: assistant
   content: Anaka opens the chest and finds a prison room key, a knife, and a gem.
   response_number: 0
 161:
   id: 161
-  chat_id: 20
+  playthrough_id: 20
   role: user
   content: drop the knife
   response_number: 0
 162:
   id: 162
-  chat_id: 20
+  playthrough_id: 20
   role: assistant
   content: Anaka drops the knife. Now, she has the prison room key and the gem.
   response_number: 0
 163:
   id: 163
-  chat_id: 20
+  playthrough_id: 20
   role: user
   content: open the door
   response_number: 0
 164:
   id: 164
-  chat_id: 20
+  playthrough_id: 20
   role: assistant
-  content: Using the prison room key, Anaka unlocks the door and steps out. It's still
+  content:
+    Using the prison room key, Anaka unlocks the door and steps out. It's still
     dark, but she can see moonlight slipping in from somewhere.
   response_number: 0

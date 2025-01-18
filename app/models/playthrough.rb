@@ -1,4 +1,4 @@
-class Chat < ApplicationRecord
+class Playthrough < ApplicationRecord
   DEVELOPER_PROMPT_TEMPLATE = <<~PROMPT
     I want you to act as an interactive text fiction simulator.
     I'll provide you with a set of scenes and instructions to parse input from the user between {{ and }}.
@@ -21,7 +21,7 @@ class Chat < ApplicationRecord
   has_many :messages, dependent: :destroy
 
   def create_initial_developer_prompt
-    developer_prompt = Chat::DEVELOPER_PROMPT_TEMPLATE.gsub("{{scenes}}", story.text)
+    developer_prompt = Playthrough::DEVELOPER_PROMPT_TEMPLATE.gsub("{{scenes}}", story.text)
     messages.create!(role: :developer, content: developer_prompt)
   end
 end

@@ -1,6 +1,6 @@
-class CreateChats < ActiveRecord::Migration[8.0]
+class CreatePlaythroughs < ActiveRecord::Migration[8.0]
   def change
-    create_table :chats do |t|
+    create_table :playthroughs do |t|
       t.references :story, null: false, foreign_key: true
 
       t.timestamps
