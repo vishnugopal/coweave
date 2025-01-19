@@ -25,6 +25,15 @@ class Message < ApplicationRecord
       locals: { message: self, scroll_to: true },
       target: "#{dom_id(playthrough)}_messages"
     )
+
+    if scene_number > 0
+      broadcast_replace_to(
+        "#{dom_id(playthrough)}_progress",
+        partial: "playthroughs/progress",
+        locals: { playthrough: playthrough, current_scene: scene_number },
+        target: "#{dom_id(playthrough)}_progress"
+      )
+    end
   end
 
   def self.for_openai(messages)

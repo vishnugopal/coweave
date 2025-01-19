@@ -4,16 +4,20 @@
     <button type="submit" form="<%= dom_id(@playthrough.story, 'form') %>" class="ml-3 inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Edit</button>
   </div>
 </div>
-<div class="bg-white shadow sm:rounded-lg">
+<div class="bg-white shadow sm:rounded-lg flex">
   <div class="px-4 py-5 sm:p-6">
-    <div class="mt-2 max-w-xl text-sm text-gray-900">
+    <div class="mt-2 max-w-xl min-w-[36rem] text-sm text-gray-900">
       <ul role="list" class="overflow-y-auto max-h-[48vh] flex flex-col-reverse">
         <%= turbo_stream_from "#{dom_id(@playthrough)}_messages" %>
-        <div id="<%= dom_id(@playthrough) %>_messages">
+        <div id="<%= dom_id(@playthrough) %>_messages" class="flex flex-col">
           <%= render @playthrough.messages %>
         </div>
       </ul>
     </div>
     <%= render partial: "messages/form", locals: { playthrough: @playthrough } %>
+  </div>
+  <div>
+    <%= turbo_stream_from "#{dom_id(@playthrough)}_progress" %>
+    <%= render partial: "progress", locals: { playthrough: @playthrough, current_scene: @playthrough.current_scene } %>
   </div>
 </div>

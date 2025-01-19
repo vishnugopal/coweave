@@ -19,7 +19,7 @@ class Playthrough < ApplicationRecord
     {
       "message": "<Your generated scene text>",
       "transition": "One of within_scene, new_scene, or story_over",
-      "scene_number": "<The scene number we are currently on>"
+      "scene_number": <The scene number we are currently on as an integer>
     }
 
     Use within_scene when you are generating text within a Scene.
@@ -29,6 +29,10 @@ class Playthrough < ApplicationRecord
 
   belongs_to :story
   has_many :messages, dependent: :destroy
+
+  def current_scene
+    Playthrough.find(id).messages.last.scene_number
+  end
 
   def create_initial_developer_prompt
     developer_prompt = Playthrough::DEVELOPER_PROMPT_TEMPLATE.gsub("{{scenes}}", story.text)
