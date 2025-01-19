@@ -6,8 +6,8 @@
 </div>
 <div class="bg-white shadow sm:rounded-lg flex">
   <div class="px-4 py-5 sm:p-6">
-    <div class="mt-2 max-w-xl min-w-[36rem] text-sm text-gray-900">
-      <ul role="list" class="overflow-y-auto max-h-[48vh] flex flex-col-reverse">
+    <div class="mt-2 max-w-xl min-w-[36rem] text-sm text-gray-900 min-h-[calc(100%-15vh)]">
+      <ul role="list" class="overflow-y-auto h-[75vh] flex flex-col-reverse">
         <%= turbo_stream_from "#{dom_id(@playthrough)}_messages" %>
         <div id="<%= dom_id(@playthrough) %>_messages" class="flex flex-col">
           <%= render @playthrough.messages %>
@@ -16,7 +16,7 @@
     </div>
     <%= render partial: "messages/form", locals: { playthrough: @playthrough } %>
   </div>
-  <div>
+  <div class="flex items-center">
     <%= turbo_stream_from "#{dom_id(@playthrough)}_progress" %>
     <%= render partial: "progress", locals: { playthrough: @playthrough, current_scene: @playthrough.current_scene } %>
   </div>

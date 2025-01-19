@@ -38,4 +38,16 @@ class Playthrough < ApplicationRecord
     developer_prompt = Playthrough::DEVELOPER_PROMPT_TEMPLATE.gsub("{{scenes}}", story.text)
     messages.create!(role: :developer, content: developer_prompt)
   end
+
+  def current_transition
+    Playthrough.find(id).messages.last.transition
+  end
+
+  def completed?
+    current_transition == "story_over"
+  end
+
+  def ongoing?
+    !completed?
+  end
 end

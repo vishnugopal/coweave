@@ -23,7 +23,7 @@
             </div>
           </li>
         <% elsif scene_number === current_scene %>
-          <li class="relative pb-10">
+          <li class="<%= "relative pb-10" unless playthrough.story.scene_count === scene_number %>">
             <div class="absolute left-4 top-4 -ml-px mt-0.5 h-full w-0.5 bg-gray-300" aria-hidden="true"></div>
             <!-- Current Step -->
             <div class="group relative flex items-start" aria-current="step">
