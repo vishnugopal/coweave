@@ -2,28 +2,29 @@
 203451238:
   id: 203451238
   title: The Moon Mage
-  text: "# Scene 1\nAnaka woke up in a dim, dark room. She could barely make out the
+  text:
+    "# Scene 1: Jail Room\nAnaka woke up in a dim, dark room. She could barely make out the
     door.\n\n{{ if Anaka tries to open the door, respond that it's locked unless she
     has the prison room key. if she looks around the room or investigates, move to
     Scene 3. If she has the prison room key, respond that the door is now unlocked,
-    and move to Scene 2.  }}\n\n# Scene 2\nAnaka opened the door and stepped out.
+    and move to Scene 2.  }}\n\n# Scene 2: Escape\nAnaka opened the door and stepped out.
     It's still dark, but she can see moonlight slipping in from somewhere.\n\n{{ the
     room has a staircase leading up, and it looks like somebody (a guard?) walking
     to & fro upstairs. if anaka goes up the stairs without sneaking, go to Scene 4.
     if she does go up quietly without making much noise, go to Scene 5. There is nowhere
-    else to go and nothing much to do. }} \n\n# Scene 3\nIt's really dark, but she
+    else to go and nothing much to do. }} \n\n# Scene 3: The Chest\nIt's really dark, but she
     can make out a dim outline of a chest somewhere to the right of her.\n\n{{ if
     Anaka tries to open the chest, she finds the prison room key, a knife, and a gem.
     If questions are asked about the gem, just say that you can hardly make out anything
-    in the darkness. Move to Scene 1 otherwise. }}\n\n# Scene 4\nThere's a guy who's
+    in the darkness. Move to Scene 1 otherwise. }}\n\n# Scene 4: The Staircase\nThere's a guy who's
     dressed like a guard right up at the top of the staircase. The instant he spots
     her, the guard takes out a sword and swings.\n\n{{ Anaka is dead. say game over
-    & go back to scene 1 if she'd like to play again }}\n\n# Scene 5\nShe creeps up
+    & go back to scene 1 if she'd like to play again }}\n\n# Scene 5: To Kill or Not to Kill\nShe creeps up
     the staircase slowly and spots a guard, with his back turned towards her. There's
     not too much time, he'll spot Anaka soon.\n\n{{ if Anaka hasn't dropped her knife,
     she can kill the guard by sneaking up behind him and go to Scene 6. if Anaka makes
     a noise or chooses not to kill the guard, go to Scene 4 (change scene text to
-    fit context) }}\n\n# Scene 6\n\n{{ display a system notice: You have received
+    fit context) }}\n\n# Scene 6: Loot!\n\n{{ display a system notice: You have received
     the sneak skill }}\n\nThe guard is dead, and his blood is slowly seeping down
     on the floor. Anaka feels sick, but what else could she do?\n\n{{ anaka can examine
     the system notice further, but she'll only get a response that \"the system is
@@ -33,7 +34,7 @@
     right now. She can only open the door, and move to Scene 7 }}\n{{ anaka can loot
     the guard, finding his clothes (which are a bit blood-soaked), his shoes (that
     will not fit), and his sword (that's a bit too heavy to lift). she can also proceed
-    without looting the guard.  she can wear the guard's clothes. }}\n\n# Scene 7\nAnaka
+    without looting the guard.  she can wear the guard's clothes. }}\n\n# Scene 7: The Final Corridor\nAnaka
     opened the door to find a long corridor. The right seems to lead to a dead-end
     and more cells, but the left seems to lead to some sort of an office, with an
     open door to the moonlight outside. There is a man there, who looked up as Anaka
@@ -41,6 +42,6 @@
     the guard's clothes, the guard will continue by saying \"Oh yeah\" and then sloop
     over the desk, enabling Anaka to escape the prison, and move to Scene 8. If she
     isn't, then the guard will yell \"Prisoner escape!\" and then display game over,
-    and go back to Scene 1 }}\n\n# Scene 8\nAnaka has escaped the prison at last.
+    and go back to Scene 1 }}\n\n# Scene 8: Out at Last!\nAnaka has escaped the prison at last.
     Her story is just beginning!\n\n{{ display game over for now, and go to scene
     1 }}\n"
