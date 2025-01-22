@@ -38,6 +38,8 @@ class GetAiResponseJob < ApplicationJob
     messages = create_messages(playthrough: playthrough)
     proc do |chunk, _bytesize|
       new_content = chunk.dig("choices", 0, "delta", "content")
+      finish_reason = chunk.dig("choices", 0, "finish_reason")
+
       message = messages.find { |m| m.response_number == chunk.dig("choices", 0, "index") }
 
       json_fragment = "#{message.json_content}#{new_content}"
@@ -64,13 +66,16 @@ class GetAiResponseJob < ApplicationJob
         allowed_values: Message.transitions.keys
       )
 
-      if new_content
-        message.update(
-          content: scene_content,
-          transition: transition,
-          scene_number: scene_number,
-          json_content: message.json_content + new_content
-        )
+      if new_content.present?
+        message.content = scene_content
+        message.transition = transition
+        message.scene_number = scene_number
+        message.json_content = message.json_content + new_content
+        message.broadcast_updated
+      end
+
+      if finish_reason.present?
+        message.save!
       end
     end
   end
