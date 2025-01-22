@@ -1,24 +1,16 @@
-# README
+# Coweave
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This helps you write intereactive fiction using an AI co-writer and director. Currently, this is not hosted anywhere, so you can only run this locally, and it's more a "proof of concept" rather than a real application. Please read the [post here](TBD) for more info.
 
-Things you may want to cover:
+## Get started
 
-* Ruby version
+1. Get an [API key from OpenAI](https://platform.openai.com/settings/organization/api-keys).
+2. bin/rails credentials:edit, and copy/paste the key like this into your editor, save and close the file.
 
-* System dependencies
+```
+openai:
+  access_token: sk-proj-XXXXXXX
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+3. bin/setup
+4. Go to http://localhost:3000 to see the existing story, and edit it as you wish!
