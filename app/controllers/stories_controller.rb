@@ -5,7 +5,20 @@ class StoriesController < ApplicationController
     @stories = Story.all
   end
 
+  def new
+    @story = Story.new
+  end
+
   def edit
+  end
+
+  def create
+    @story = Story.new(story_params)
+    if @story.save
+      redirect_to edit_story_path(@story), notice: "Story was successfully created."
+    else
+      render :new
+    end
   end
 
   def update
@@ -21,6 +34,18 @@ class StoriesController < ApplicationController
   end
 
   def play
+    play_params = params.require(:id)
+    if params[:story]
+      play_params = story_params
+    end
+
+    # Save and play!
+    if params[:story]
+      unless @story.update(play_params)
+        return render :edit
+      end
+    end
+
     @playthrough = @story.playthroughs.create
     @playthrough.create_initial_developer_prompt
     GetAiResponseJob.perform_later @playthrough.id
