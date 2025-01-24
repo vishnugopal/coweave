@@ -1,5 +1,5 @@
 class StoriesController < ApplicationController
-  before_action :set_story, only: [ :edit, :update ]
+  before_action :set_story, only: [ :play, :edit, :update ]
 
   def index
     @stories = Story.all
@@ -12,14 +12,7 @@ class StoriesController < ApplicationController
     if @story.update(story_params)
       respond_to do |format|
         format.html do
-          if params[:commit] == "Play"
-            @playthrough = @story.playthroughs.create
-            @playthrough.create_initial_developer_prompt
-            GetAiResponseJob.perform_later @playthrough.id
-            redirect_to playthrough_path(@playthrough)
-          else
-            redirect_to edit_story_path(@story), notice: "Story was successfully updated."
-          end
+          redirect_to edit_story_path(@story), notice: "Story was successfully updated."
         end
       end
     else
@@ -27,9 +20,17 @@ class StoriesController < ApplicationController
     end
   end
 
+  def play
+    @playthrough = @story.playthroughs.create
+    @playthrough.create_initial_developer_prompt
+    GetAiResponseJob.perform_later @playthrough.id
+    redirect_to playthrough_path(@playthrough)
+  end
+
   private
   def set_story
-    @story = Story.find(params[:id])
+    id = params.expect(:id)
+    @story = Story.find(id)
   end
 
   def story_params
