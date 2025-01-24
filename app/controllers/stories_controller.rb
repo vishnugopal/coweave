@@ -1,5 +1,5 @@
 class StoriesController < ApplicationController
-  before_action :set_story, only: [ :play, :edit, :update ]
+  before_action :set_story, only: [ :play, :edit, :update, :destroy ]
 
   def index
     @stories = Story.all
@@ -10,6 +10,11 @@ class StoriesController < ApplicationController
   end
 
   def edit
+  end
+
+  def destroy
+    @story.destroy
+    redirect_to stories_url, notice: "Story was successfully destroyed"
   end
 
   def create
