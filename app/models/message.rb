@@ -34,6 +34,19 @@ class Message < ApplicationRecord
         target: "#{dom_id(playthrough)}_progress"
       )
     end
+
+    if completed?
+      broadcast_replace_to(
+        "#{dom_id(playthrough)}_message_form",
+        partial: "messages/form",
+        locals: { playthrough: playthrough },
+        target: "#{dom_id(playthrough)}_message_form"
+      )
+    end
+  end
+
+  def completed?
+    transition === "story_over"
   end
 
   def self.for_openai(messages)

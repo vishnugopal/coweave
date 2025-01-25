@@ -1,17 +1,16 @@
 
 <%= turbo_frame_tag "#{dom_id(playthrough)}_message_form", target: "_top" do %>
   <% if playthrough.completed? %>
-  <%= form_with model: playthrough.story, html: { class: "relative" } do |form| %>
-    <%= form.hidden_field :id %>
-    <div class="bg-purple-200 rounded-lg my-4 mx-8 p-4 w-3/4 flex items-center justify-between">
-      <span>Story over! Play again?</span>
-      <%= render ButtonComponent.new form: form, type: :primary, html: { type: "submit" } do %>
-        Play
-      <% end %>
-    </div>
+    <%= form_with model: playthrough.story, html: { class: "relative" } do |form| %>
+      <%= form.hidden_field :id %>
+      <div class="bg-purple-200 rounded-lg my-4 mx-8 p-4 w-3/4 flex items-center justify-between">
+        <span>Story over! Play again?</span>
+        <%= render ButtonComponent.new form: form, type: :primary, html: { type: "submit" } do %>
+          Play
+        <% end %>
+      </div>
     <% end %>
-  <% end %>
-  <% if playthrough.ongoing? %>
+  <% else %>
     <%= form_with(model: Message.new, url: [playthrough, playthrough.messages.new], html: { class: "mx-8 mt-10 sm:flex sm:items-center"  }) do |form| %>
         <div class="w-full sm:max-w-md">
           <%= form.text_field :content, class: "block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6", autofocus: true, "x-on:keydown.cmd.enter" => "$event.target.form.requestSubmit();", placeholder: "What do you want to do?" %>
