@@ -1,8 +1,16 @@
-<% if link? %>
+<% if tag_type === :link %>
   <%= content_tag :a, **html_attributes do %>
     <%= content %>
   <% end %>
-<% else %>
+<% elsif tag_type === :submit_button_inside_form %>
+  <%= @form.submit content.strip, **html_attributes %>
+<% elsif tag_type === :button_inside_form %>
+  <%= @form.button content.strip, **html_attributes %>
+<% elsif tag_type === :button %>
+  <%= button_tag **html_attributes do %>
+    <%= content %>
+  <% end %>
+<% elsif tag_type === :button_with_href %>
   <%= button_to @href, **html_attributes do %>
     <%= content %>
   <% end %>

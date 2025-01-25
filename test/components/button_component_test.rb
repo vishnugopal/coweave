@@ -3,10 +3,9 @@
 require "test_helper"
 
 class ButtonComponentTest < ViewComponent::TestCase
-  def test_component_renders_something_useful
-    # assert_equal(
-    #   %(<span>Hello, components!</span>),
-    #   render_inline(ButtonComponent.new(message: "Hello, components!")).css("span").to_html
-    # )
+  def test_component_renders
+    render_inline(ButtonComponent.new) { "Hello, components!" }
+    assert_component_rendered
+    assert_text "Hello, components!"
   end
 end

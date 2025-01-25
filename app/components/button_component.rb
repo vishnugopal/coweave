@@ -3,8 +3,8 @@
 class ButtonComponent < ViewComponent::Base
   attr_reader :attributes, :html_attributes
 
-  def initialize(href:, **attributes)
-    @href = href
+  def initialize(**attributes)
+    @href = attributes[:href]
     @attributes = attributes
     @html_attributes = attributes[:html] || {}
 
@@ -12,8 +12,8 @@ class ButtonComponent < ViewComponent::Base
     set_tag
   end
 
-  def link?
-    @link
+  def tag_type
+    @tag_type
   end
 
   private
@@ -23,24 +23,31 @@ class ButtonComponent < ViewComponent::Base
 
     case attributes[:type]
     when :primary
-      classes = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      classes = "inline-flex items-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
     when :secondary
-      classes = "bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
-    when :danger
-      classes = "bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+      classes = "inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
     end
 
     @html_attributes[:class] = class_names(@html_attributes[:class], classes)
   end
 
   def set_tag
-    case attributes[:as]
-    when :link
-      @link = true
+    if attributes[:as] === :link
+      @tag_type = :link
       @html_attributes[:href] = @href || "#"
       @html_attributes[:role] = "button"
+    elsif attributes[:form].present?
+      if @html_attributes[:type] === "submit"
+        @tag_type = :submit_button_inside_form
+        @form = attributes[:form]
+      else
+        @tag_type = :button_inside_form
+        @form = attributes[:form]
+      end
+    elsif @href.blank?
+      @tag_type = :button
     else
-      @link = false
+      @tag_type = :button_with_href
     end
   end
 end
