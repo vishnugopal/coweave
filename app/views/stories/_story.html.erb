@@ -16,9 +16,7 @@
     <%= render ButtonComponent.new(href: edit_story_path(story), as: :link) do %>
       Edit Story<span class="sr-only">, <%= story.title %></span>
     <% end %>
-    <%= render ButtonComponent.new(href: play_story_path(story)) do %>
-      Play
-    <% end %>
+    <%= render ButtonComponent.new(href: play_story_path(story)).with_content("Play") %>
     <div class="relative flex-none group" data-controller="button-menu">
       <button type="button" class="-m-2.5 block p-2.5 text-gray-500 hover:text-gray-900" id="options-menu-0-button" aria-expanded="false" aria-haspopup="true" data-action="button-menu#toggle">
         <span class="sr-only">Open options</span>

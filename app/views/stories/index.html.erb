@@ -1,9 +1,7 @@
 <header>
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex">
     <h1 class="text-3xl font-bold tracking-tight text-gray-900">Stories</h1>
-    <%= render ButtonComponent.new href: new_story_path, type: :primary, as: :link, html: { class: "ml-auto" } do %>
-      New Story
-    <% end %>
+    <%= render ButtonComponent.new(href: new_story_path, type: :primary, as: :link, html: { class: "ml-auto" }).with_content("New Story") %>
   </div>
 </header>
 <main>

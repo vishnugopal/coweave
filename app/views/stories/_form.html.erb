@@ -10,9 +10,7 @@
       </div>
       <% unless story.new_record? %>
         <div class="shrink-0">
-          <%= render ButtonComponent.new type: :primary, form: form, html: { formaction: play_story_path(story), formmethod: :post, data: { turbo_method: :post } } do %>
-            Play
-          <% end %>
+          <%= render ButtonComponent.new(type: :primary, form: form, html: { formaction: play_story_path(story), formmethod: :post, data: { turbo_method: :post } }).with_content("Play") %>
         </div>
       <% end %>
     </div>
