@@ -1,0 +1,9 @@
+<% if link? %>
+  <%= content_tag :a, **html_attributes do %>
+    <%= content %>
+  <% end %>
+<% else %>
+  <%= button_to @href, **html_attributes do %>
+    <%= content %>
+  <% end %>
+<% end %>
