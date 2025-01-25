@@ -37,7 +37,7 @@ class ButtonComponent < ViewComponent::Base
       @html_attributes[:href] = @href || "#"
       @html_attributes[:role] = "button"
     elsif attributes[:form].present?
-      if @html_attributes[:type] === "submit"
+      if @html_attributes[:type] && @html_attributes[:type].to_sym === :submit
         @tag_type = :submit_button_inside_form
         @form = attributes[:form]
       else
