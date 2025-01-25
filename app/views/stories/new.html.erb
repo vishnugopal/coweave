@@ -1,7 +1,7 @@
 <div class="border-b border-gray-200 pb-5 sm:flex sm:items-center sm:justify-between">
   <h3 class="text-base font-semibold text-gray-900">New story</h3>
   <div class="mt-3 flex sm:ml-4 sm:mt-0">
-    <%= render ButtonComponent.new type: :primary, html: { type: "submit", form: dom_id(@story, 'form')  } do %>
+    <%= render ButtonComponent.new type: :primary, html: { form: dom_id(@story, 'form')  } do %>
       Create
     <% end %>  
   </div>
