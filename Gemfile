@@ -64,7 +64,7 @@ end
 
 gem "tailwindcss-rails", "~> 3.3"
 
-gem "ruby-openai", "~> 7.3"
+gem "ruby-openai", "~> 7.4"
 
 gem "optimistic-json", "~> 0.1.2"
 
